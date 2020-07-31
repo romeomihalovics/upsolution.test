@@ -1,18 +1,33 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <firstSection/>
+    <secondSection/>
+    <thirdSection/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import firstSection from '@/components/firstSection.vue'
+import secondSection from '@/components/secondSection.vue'
+import thirdSection from '@/components/thirdSection.vue'
 
 export default {
   name: 'Home',
+  metaInfo () {
+    return {
+      title: 'Beni\'s - Főoldal',
+      meta: [
+        {
+          name: 'description',
+          content: 'Upsolution front end test task ("Beni\'s")'
+        }
+      ]
+    }
+  },
   components: {
-    HelloWorld
+    firstSection,
+    secondSection,
+    thirdSection
   }
 }
 </script>

@@ -1,23 +1,36 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueMeta from 'vue-meta'
 import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
+Vue.use(VueMeta)
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'Fooldal',
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    path: '/edessegek',
+    name: 'Edessegek',
     component: function () {
-      return import(/* webpackChunkName: "about" */ '../views/About.vue')
+      return import(/* webpackChunkName: "candies" */ '../views/Candies.vue')
+    }
+  },
+  {
+    path: '/kapcsolat',
+    name: 'Kapcsolat',
+    component: function () {
+      return import(/* webpackChunkName: "contact" */ '../views/Contact.vue')
+    }
+  },
+  {
+    path: '/gyik',
+    name: 'Gyik',
+    component: function () {
+      return import(/* webpackChunkName: "faq" */ '../views/Faq.vue')
     }
   }
 ]

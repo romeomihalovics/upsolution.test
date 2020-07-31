@@ -1,10 +1,9 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <topSmallNav/>
+    <topNav/>
     <router-view/>
+    <pageFooter/>
   </div>
 </template>
 
@@ -30,3 +29,18 @@
   }
 }
 </style>
+
+<script>
+import topSmallNav from '@/components/topSmallNav.vue'
+import topNav from '@/components/topNav.vue'
+import pageFooter from '@/components/footer.vue'
+// import data from '@/data.json'
+
+export default {
+  components: {
+    topSmallNav,
+    topNav,
+    pageFooter
+  }
+}
+</script>
