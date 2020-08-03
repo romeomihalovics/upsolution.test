@@ -32,6 +32,17 @@ const routes = [
     component: function () {
       return import(/* webpackChunkName: "faq" */ '../views/Faq.vue')
     }
+  },
+  {
+    path: '/termek',
+    redirect: '/edessegek'
+  },
+  {
+    path: '/termek/:id',
+    name: 'Termek',
+    component: function () {
+      return import(/* webpackChunkName: "single" */ '../views/Single.vue')
+    }
   }
 ]
 

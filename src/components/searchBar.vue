@@ -2,11 +2,20 @@
   <div class="searchBar">
     <div class="container searchBar-container">
       <div class="position-relative">
-        <input type="text" class="searchBar-input" placeholder="Keress az édességek között!">
+        <input
+          @focus="showSearchResults($event.target.value)"
+          @blur="hideSearchResults"
+          @keydown.esc="hideSearchResults"
+          @input="search($event.target.value)"
+          ref="searchInput"
+          type="text"
+          class="searchBar-input"
+          placeholder="Keress az édességek között!">
         <div class="searchBar-btn">
           <span class="icon-search"></span>
         </div>
       </div>
+      <searchResults/>
     </div>
   </div>
 </template>
@@ -14,11 +23,13 @@
 <style lang="scss">
 .searchBar {
   position: absolute;
+  z-index: 5;
   bottom:50px;
   width: 100%;
   .searchBar-container {
     background-color: $color_white;
     box-shadow: 0px 20px 30px $color_gray;
+    position: relative;
     .searchBar-input {
       background-color: $color_gray_lightest;
       color: $color_pink_darker;
@@ -67,7 +78,36 @@
 </style>
 
 <script>
+import searchResults from '@/components/searchResults.vue'
+
 export default {
-  name: 'searchBar'
+  name: 'searchBar',
+  components: {
+    searchResults
+  },
+  methods: {
+    search (val) {
+      this.$store.commit('setSearchResults', this.jsondata.fakeSearchResults)
+      if (val) {
+        this.showSearchResults(val)
+      } else {
+        this.hideSearchResults()
+      }
+    },
+    hideSearchResults () {
+      this.$store.commit('setShowSearchResults', false)
+      this.$refs.searchInput.blur()
+    },
+    showSearchResults (val) {
+      if (val) {
+        this.$store.commit('setShowSearchResults', true)
+      }
+    }
+  },
+  computed: {
+    jsondata () {
+      return this.$store.state.jsondata
+    }
+  }
 }
 </script>

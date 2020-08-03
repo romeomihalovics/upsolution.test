@@ -11,18 +11,15 @@
       @pageChange="carouselHandler"
       class="carousel-text"
     >
-      <slide bg-image="mae-mu-_C5zsV_p-YI-unsplash.png">
+      <slide
+        v-for="(data, id) in jsondata.slides"
+        :key="id"
+      >
         <h2>
-          Nullam rhoncus enim ut quam elementum
+          {{ data.header }}
         </h2>
         <p>
-          Aenean viverra libero sit amet erat pulvinar dapibus. Fusce eros tellus, consequat vitae risus nec, pulvinar
-        </p>
-      </slide>
-      <slide bg-image="luis-aguila-xLvIcAYuuMQ-unsplash.png">
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>
-          Praesent imperdiet erat quis nulla ullamcorper commodo. Suspendisse quis velit nec diam pretium lobortis non et turpis
+          {{ data.text }}
         </p>
       </slide>
     </carousel>
@@ -36,12 +33,10 @@
       class="carousel-bg"
     >
       <slide
+        v-for="(data, id) in jsondata.slides"
+        :key="id"
         class="carousel-bg-slide"
-        :style="{ backgroundImage: 'url('+require('@/assets/img/mae-mu-_C5zsV_p-YI-unsplash.png')+')' }"
-      ></slide>
-      <slide
-        class="carousel-bg-slide"
-        :style="{ backgroundImage: 'url('+require('@/assets/img/mae-mu-_C5zsV_p-YI-unsplash.png')+')' }"
+        :style="{ backgroundImage: 'url('+require('@/assets/img/'+data.img)+')' }"
       ></slide>
     </carousel>
     <searchBar/>
@@ -116,6 +111,11 @@ export default {
   methods: {
     carouselHandler (n) {
       this.currentPage = n
+    }
+  },
+  computed: {
+    jsondata () {
+      return this.$store.state.jsondata
     }
   }
 }

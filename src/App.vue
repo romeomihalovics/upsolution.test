@@ -4,6 +4,7 @@
     <topNav/>
     <router-view/>
     <pageFooter/>
+    <authModals/>
   </div>
 </template>
 
@@ -34,13 +35,20 @@
 import topSmallNav from '@/components/topSmallNav.vue'
 import topNav from '@/components/topNav.vue'
 import pageFooter from '@/components/footer.vue'
-// import data from '@/data.json'
+import authModals from '@/components/authModals.vue'
+import data from '@/data.json'
 
 export default {
+  beforeMount () {
+    this.$store.commit('setJsonData', data[0])
+    this.$store.commit('setCart', this.$cookies.get('cart') || 0)
+    this.$store.commit('setLoggedin', this.$cookies.get('loggedin') || false)
+  },
   components: {
     topSmallNav,
     topNav,
-    pageFooter
+    pageFooter,
+    authModals
   }
 }
 </script>

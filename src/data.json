@@ -1,0 +1,168 @@
+[
+	{
+		"fakeuser": {
+			"name": "John Doe",
+			"cart": 2
+		},
+		"slides": [
+			{
+				"header": "Nullam rhoncus enim ut quam elementum",
+				"img": "mae-mu-_C5zsV_p-YI-unsplash.png",
+				"text": "Aenean viverra libero sit amet erat pulvinar dapibus. Fusce eros tellus, consequat vitae risus nec, pulvinar"
+			},
+			{
+				"header": "Lorem ipsum dolor sit amet",
+				"img": "mae-mu-_C5zsV_p-YI-unsplash.png",
+				"text": "Praesent imperdiet erat quis nulla ullamcorper commodo. Suspendisse quis velit nec diam pretium lobortis non et turpis"
+			}
+		],
+		"recommended": [
+			{
+				"label": "Új!",
+				"img": "cocacola_item.png",
+				"name": "Coca-Cola 0.33 dl",
+				"new_price": "240 Ft/db",
+				"old_price": "290 Ft/db",
+				"id": 0
+			},
+			{
+				"label": "Új!",
+				"img": "hell_item.png",
+				"name": "Hell energia ital",
+				"new_price": "240 Ft/db",
+				"old_price": "290 Ft/db",
+				"id": 1
+			},
+			{
+				"label": "Új!",
+				"img": "balaton_item.png",
+				"name": "Balaton szelet",
+				"new_price": "240 Ft/db",
+				"old_price": "290 Ft/db",
+				"id": 2
+			},
+			{
+				"label": "Új!",
+				"img": "mars_item.png",
+				"name": "Mars szelet",
+				"new_price": "240 Ft/db",
+				"old_price": "290 Ft/db",
+				"id": 3
+			},
+			{
+				"label": "Új!",
+				"img": "twix_item.png",
+				"name": "Twix szelet",
+				"new_price": "240 Ft/db",
+				"old_price": "290 Ft/db",
+				"id": 4
+			},
+			{
+				"label": "Új!",
+				"img": "milkyway_item.png",
+				"name": "Milky Way szelet",
+				"new_price": "240 Ft/db",
+				"old_price": "290 Ft/db",
+				"id": 5
+			}
+		],
+		"all": {
+			"pageCount": 3,
+			"items": [
+				{
+					"label": "Új!",
+					"img": "cocacola_item.png",
+					"name": "Coca-Cola 0.33 dl",
+					"new_price": "240 Ft/db",
+					"old_price": "290 Ft/db",
+					"id": 0,
+					"single": {
+						"imgs": ["cocacola_item.png", "cocacola.svg"],
+						"small_desc": "Vestibulum finibus id magna viverra dictum. Fusce tincidunt sem eget purus condimentum, vel tincidunt turpis bibendum.",
+						"detailed_desc": "Suspendisse malesuada felis ipsum, vel egestas diam egestas id. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi tincidunt diam libero. Aliquam dictum et orci eu dictum. Curabitur vehicula dui nulla, porta gravida mauris interdum vitae. Proin eu nunc a tortor scelerisque finibus luctus non massa. In lacinia nunc vitae felis porta, quis interdum massa gravida. Vivamus eu consectetur dolor. Ut sit amet rutrum ligula. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisis purus nec arcu convallis fringilla ac non erat.",
+						"ingredients": "Nullam sodales urna eget libero iaculis gravida. Morbi malesuada nisl quis tortor accumsan, eget dapibus velit sodales. Phasellus accumsan egestas tellus, ac condimentum metus vehicula vulputate. Maecenas ut aliquam nunc. Duis vehicula metus quis lacus fringilla cursus."
+					}
+				},
+				{
+					"label": "Új!",
+					"img": "hell_item.png",
+					"name": "Hell energia ital",
+					"new_price": "240 Ft/db",
+					"old_price": "290 Ft/db",
+					"id": 1,
+					"single": {
+						"imgs": ["hell_item.png", "hell.svg"],
+						"small_desc": "Vestibulum finibus id magna viverra dictum. Fusce tincidunt sem eget purus condimentum, vel tincidunt turpis bibendum.",
+						"detailed_desc": "Suspendisse malesuada felis ipsum, vel egestas diam egestas id. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi tincidunt diam libero. Aliquam dictum et orci eu dictum. Curabitur vehicula dui nulla, porta gravida mauris interdum vitae. Proin eu nunc a tortor scelerisque finibus luctus non massa. In lacinia nunc vitae felis porta, quis interdum massa gravida. Vivamus eu consectetur dolor. Ut sit amet rutrum ligula. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisis purus nec arcu convallis fringilla ac non erat.",
+						"ingredients": "Nullam sodales urna eget libero iaculis gravida. Morbi malesuada nisl quis tortor accumsan, eget dapibus velit sodales. Phasellus accumsan egestas tellus, ac condimentum metus vehicula vulputate. Maecenas ut aliquam nunc. Duis vehicula metus quis lacus fringilla cursus."
+					}
+				},
+				{
+					"label": "Új!",
+					"img": "balaton_item.png",
+					"name": "Balaton szelet",
+					"new_price": "240 Ft/db",
+					"old_price": "290 Ft/db",
+					"id": 2,
+					"single": {
+						"imgs": ["balaton_item.png", "balaton.svg"],
+						"small_desc": "Vestibulum finibus id magna viverra dictum. Fusce tincidunt sem eget purus condimentum, vel tincidunt turpis bibendum.",
+						"detailed_desc": "Suspendisse malesuada felis ipsum, vel egestas diam egestas id. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi tincidunt diam libero. Aliquam dictum et orci eu dictum. Curabitur vehicula dui nulla, porta gravida mauris interdum vitae. Proin eu nunc a tortor scelerisque finibus luctus non massa. In lacinia nunc vitae felis porta, quis interdum massa gravida. Vivamus eu consectetur dolor. Ut sit amet rutrum ligula. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisis purus nec arcu convallis fringilla ac non erat.",
+						"ingredients": "Nullam sodales urna eget libero iaculis gravida. Morbi malesuada nisl quis tortor accumsan, eget dapibus velit sodales. Phasellus accumsan egestas tellus, ac condimentum metus vehicula vulputate. Maecenas ut aliquam nunc. Duis vehicula metus quis lacus fringilla cursus."
+					}
+				},
+				{
+					"label": "Új!",
+					"img": "mars_item.png",
+					"name": "Mars szelet",
+					"new_price": "240 Ft/db",
+					"old_price": "290 Ft/db",
+					"id": 3,
+					"single": {
+						"imgs": ["mars_item.png"],
+						"small_desc": "Vestibulum finibus id magna viverra dictum. Fusce tincidunt sem eget purus condimentum, vel tincidunt turpis bibendum.",
+						"detailed_desc": "Suspendisse malesuada felis ipsum, vel egestas diam egestas id. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi tincidunt diam libero. Aliquam dictum et orci eu dictum. Curabitur vehicula dui nulla, porta gravida mauris interdum vitae. Proin eu nunc a tortor scelerisque finibus luctus non massa. In lacinia nunc vitae felis porta, quis interdum massa gravida. Vivamus eu consectetur dolor. Ut sit amet rutrum ligula. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisis purus nec arcu convallis fringilla ac non erat.",
+						"ingredients": "Nullam sodales urna eget libero iaculis gravida. Morbi malesuada nisl quis tortor accumsan, eget dapibus velit sodales. Phasellus accumsan egestas tellus, ac condimentum metus vehicula vulputate. Maecenas ut aliquam nunc. Duis vehicula metus quis lacus fringilla cursus."
+					}
+				},
+				{
+					"label": "Új!",
+					"img": "twix_item.png",
+					"name": "Twix szelet",
+					"new_price": "240 Ft/db",
+					"old_price": "290 Ft/db",
+					"id": 4,
+					"single": {
+						"imgs": ["twix_item.png", "twix.svg"],
+						"small_desc": "Vestibulum finibus id magna viverra dictum. Fusce tincidunt sem eget purus condimentum, vel tincidunt turpis bibendum.",
+						"detailed_desc": "Suspendisse malesuada felis ipsum, vel egestas diam egestas id. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi tincidunt diam libero. Aliquam dictum et orci eu dictum. Curabitur vehicula dui nulla, porta gravida mauris interdum vitae. Proin eu nunc a tortor scelerisque finibus luctus non massa. In lacinia nunc vitae felis porta, quis interdum massa gravida. Vivamus eu consectetur dolor. Ut sit amet rutrum ligula. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisis purus nec arcu convallis fringilla ac non erat.",
+						"ingredients": "Nullam sodales urna eget libero iaculis gravida. Morbi malesuada nisl quis tortor accumsan, eget dapibus velit sodales. Phasellus accumsan egestas tellus, ac condimentum metus vehicula vulputate. Maecenas ut aliquam nunc. Duis vehicula metus quis lacus fringilla cursus."
+					}
+				},
+				{
+					"label": "Új!",
+					"img": "milkyway_item.png",
+					"name": "Milky Way szelet",
+					"new_price": "240 Ft/db",
+					"old_price": "290 Ft/db",
+					"id": 5,
+					"single": {
+						"imgs": ["milkyway_item.png"],
+						"small_desc": "Vestibulum finibus id magna viverra dictum. Fusce tincidunt sem eget purus condimentum, vel tincidunt turpis bibendum.",
+						"detailed_desc": "Suspendisse malesuada felis ipsum, vel egestas diam egestas id. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi tincidunt diam libero. Aliquam dictum et orci eu dictum. Curabitur vehicula dui nulla, porta gravida mauris interdum vitae. Proin eu nunc a tortor scelerisque finibus luctus non massa. In lacinia nunc vitae felis porta, quis interdum massa gravida. Vivamus eu consectetur dolor. Ut sit amet rutrum ligula. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisis purus nec arcu convallis fringilla ac non erat.",
+						"ingredients": "Nullam sodales urna eget libero iaculis gravida. Morbi malesuada nisl quis tortor accumsan, eget dapibus velit sodales. Phasellus accumsan egestas tellus, ac condimentum metus vehicula vulputate. Maecenas ut aliquam nunc. Duis vehicula metus quis lacus fringilla cursus."
+					}
+				}
+			]
+		},
+		"fakeSearchResults": [
+			{
+			 	"img": "balaton_item.png",
+				"name": "Balaton szelet",
+				"new_price": "240 Ft/db",
+				"old_price": "290 Ft/db",
+				"id": 2
+			}
+		]
+	}
+]

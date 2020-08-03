@@ -2,7 +2,28 @@
   <div>
     <b-navbar type="dark" class="topSmallNav">
       <b-navbar-nav class="ml-auto">
-        <b-nav-item href="#" class="smallNav-link">Bejelentkezés</b-nav-item>
+        <b-nav-item
+          href="#"
+          class="smallNav-link"
+          @click="showLogin"
+          v-if="!loggedin"
+        >
+          Bejelentkezés
+        </b-nav-item>
+        <b-nav-item-dropdown
+          class="smallNav-link text-center"
+          v-if="loggedin"
+          right
+        >
+          <template slot="button-content">
+            JOHN DOE
+            <span class="icon-angle-down"></span>
+          </template>
+          <b-dropdown-item href="#">Profilom</b-dropdown-item>
+          <b-dropdown-item href="#" class="active">Rendeléseim</b-dropdown-item>
+          <b-dropdown-item href="#" @click="fakeLogout">Kijelentkezés</b-dropdown-item>
+        </b-nav-item-dropdown>
+        <b-nav-item href="#" class="smallNav-link">Kosár ({{ cart }})</b-nav-item>
         <b-nav-item-dropdown class="smallNav-link text-center" right>
           <template slot="button-content">
             HU
@@ -82,8 +103,10 @@
         color: $color_black !important;
         background-color: transparent !important;
         font-size: 14px;
-        &.active {
-          color: $color_red !important;
+      }
+      &.active {
+        a {
+          color: $color_pink_darker !important;
         }
       }
     }
@@ -93,6 +116,26 @@
 
 <script>
 export default {
-  name: 'topSmallNav'
+  name: 'topSmallNav',
+  methods: {
+    showLogin () {
+      this.$root.$emit('showLogin')
+    },
+    fakeLogout () {
+      this.$store.commit('setLoggedin', false)
+      this.$cookies.remove('loggedin')
+    }
+  },
+  computed: {
+    jsondata () {
+      return this.$store.state.jsondata
+    },
+    loggedin () {
+      return this.$store.state.loggedin
+    },
+    cart () {
+      return (this.loggedin) ? this.jsondata.fakeuser.cart + this.$store.state.cart : this.$store.state.cart
+    }
+  }
 }
 </script>

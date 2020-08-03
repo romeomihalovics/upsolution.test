@@ -5,25 +5,33 @@
       <h3>Ajánlott édességek</h3>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div
+            v-for="(data, id) in jsondata.recommended"
+            :key="id"
+            class="col-md-4"
+          >
             <div class="grid-item">
-              <div class="item-label">Új!</div>
+              <div class="item-label">{{ data.label }}</div>
               <div class="item-picture">
-                <div :style="{ backgroundImage: 'url('+require('@/assets/img/cocacola_item.png')+')' }"></div>
+                <router-link :to="'/termek/'+data.id">
+                  <div :style="{ backgroundImage: 'url('+require('@/assets/img/'+data.img)+')' }"></div>
+                </router-link>
               </div>
-              <div class="item-name">Coca-Cola 0,33 dl</div>
+              <div class="item-name">
+                <router-link :to="'/termek/'+data.id">{{ data.name }}</router-link>
+              </div>
               <div class="item-info">
-                240 Ft/db <span>290 Ft/db</span>
+                {{ data.new_price }} <span>{{ data.old_price }}</span>
               </div>
               <div class="item-btn">
-                <button class="big-btn">Kosárba rakom</button>
+                <button class="big-btn" @click="addCart">Kosárba rakom</button>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="seeAll">
-        <button class="big-btn">Összes Édesség</button>
+        <router-link to="/edessegek"><button class="big-btn">Összes Édesség</button></router-link>
       </div>
     </div>
   </section>
@@ -64,6 +72,17 @@
 
 <script>
 export default {
-  name: 'secondSection'
+  name: 'secondSection',
+  computed: {
+    jsondata () {
+      return this.$store.state.jsondata
+    }
+  },
+  methods: {
+    addCart () {
+      this.$cookies.set('cart', this.$store.state.cart + 1)
+      this.$store.commit('setCart', this.$cookies.get('cart') || 0)
+    }
+  }
 }
 </script>
