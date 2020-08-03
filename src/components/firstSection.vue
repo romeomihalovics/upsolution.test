@@ -45,7 +45,7 @@
 
 <style lang="scss">
 .carousel-text {
-  position: absolute;
+  position: absolute !important;
   z-index: 2;
   margin-left: 210px;
   margin-top: 115px;
