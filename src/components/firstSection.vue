@@ -142,6 +142,21 @@
     width: 80%;
   }
 }
+
+@media (max-height: 420px) {
+  .carousel-text {
+    width: calc(100% - 140px);
+    max-width: unset;
+    margin: 10px auto;
+    right: 0;
+    left: 0;
+    .VueCarousel-navigation {
+      width: 100%;
+      left: -10px;
+      top:0;
+    }
+  }
+}
 </style>
 
 <script>

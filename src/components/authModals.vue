@@ -43,13 +43,13 @@
             <span>Email</span>
           </span>
         </label>
-        <label class="auth-input">
+        <label class="auth-input portrait-inline first">
           <input type="password" name="password" placeholder=" ">
           <span class="label-wrapper">
             <span>Jelszó</span>
           </span>
         </label>
-        <label class="auth-input">
+        <label class="auth-input portrait-inline">
           <input type="password" name="password_confirm" placeholder=" ">
           <span class="label-wrapper">
             <span>Jelszó újra</span>
@@ -171,6 +171,51 @@
     }
     .agreed-check {
       margin: 30px 0px;
+    }
+  }
+}
+
+@media (max-height: 700px) {
+  .authModal {
+    .authContent {
+      margin:30px 50px;
+      .auth-input {
+        margin:20px 0px;
+      }
+      .auth-link {
+        margin-bottom:25px;
+      }
+      .big-btn {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-height: 400px) {
+  .authModal {
+    .authContent {
+      margin:10px 50px;
+      h3 {
+        font-size: 16px;
+        margin:0;
+      }
+      .auth-input {
+        margin:10px 0px;
+      }
+      .auth-link {
+        margin-bottom:15px;
+      }
+      .big-btn {
+        margin-bottom: 15px;
+      }
+      .portrait-inline {
+        display: inline-block;
+        width: 45%;
+        &.first {
+          margin-right: 10%;
+        }
+      }
     }
   }
 }

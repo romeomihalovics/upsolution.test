@@ -111,6 +111,12 @@
     }
   }
 }
+
+@media (max-height: 400px) {
+  .searchBar {
+    bottom: 10px;
+  }
+}
 </style>
 
 <script>
