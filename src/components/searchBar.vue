@@ -97,6 +97,18 @@
       .searchBar-input {
         margin: 20px 30px;
         padding: 13px 10px;
+        &:hover ~ .searchBar-btn {
+          padding: 11px;
+          span {
+            font-size: 30px
+          }
+        }
+        &:focus ~ .searchBar-btn {
+          padding: 11px;
+          span {
+            font-size: 30px
+          }
+        }
       }
       .searchBar-btn {
         width: 50px;
