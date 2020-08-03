@@ -130,7 +130,6 @@
         -moz-appearance: none;
         width: 100%;
         min-height: 100px;
-        border-bottom: 2px solid $color_gray_dark;
         &:not(:placeholder-shown):not(:focus)  ~ .label-wrapper > span {
           opacity:0;
         }
@@ -159,6 +158,15 @@
         left:0;
         bottom:0;
         transition: .2s ease-out;
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2px;
+          background-color: $color_gray_dark;
+        }
         &::after {
           content: '';
           position: absolute;
