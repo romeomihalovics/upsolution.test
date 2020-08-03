@@ -74,9 +74,13 @@
       height: 70px;
       margin-right: -20px;
       opacity: 1;
+      transition: .2s ease-out;
       .carousel-btn-label {
         font-size: 20px;
         line-height: 2;
+      }
+      &:hover {
+        opacity: .6;
       }
     }
   }

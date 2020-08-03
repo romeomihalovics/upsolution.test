@@ -89,12 +89,16 @@
     a {
       color: $color_white !important;
       padding-right: 15px;
+      transition: .2s ease-out;
       &:after {
         display: none;
       }
       span {
         margin-left: 5px;
         font-size: 14px;
+      }
+      &:hover {
+        opacity: .7;
       }
     }
     li {

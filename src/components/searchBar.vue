@@ -56,6 +56,18 @@
         font-style: italic;
         font-weight: normal;
       }
+      &:hover ~ .searchBar-btn {
+        padding: 20px;
+        span {
+          font-size: 30px
+        }
+      }
+      &:focus ~ .searchBar-btn {
+        padding: 20px;
+        span {
+          font-size: 30px
+        }
+      }
     }
     .searchBar-btn {
       position: absolute;
@@ -68,7 +80,9 @@
       background-color: $color_pink_darker;
       border-radius: 5px;
       padding:23px;
+      transition:.2s ease-out;
       span {
+        transition:.2s ease-out;
         font-size: 24px;
         color: $color_white;
       }

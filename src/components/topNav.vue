@@ -38,6 +38,10 @@
       font-size: 16px;
       letter-spacing: 0.96px;
       color: $color_purple !important;
+      transition: .2s ease-out;
+      &:hover {
+        opacity: .7;
+      }
     }
   }
   .navbar-toggler {
