@@ -13,7 +13,7 @@
             <div
               v-for="(data, id) in jsondata.all.items"
               :key="id"
-              class="col-md-4"
+              class="col-lg-4 col-md-6"
             >
               <div class="grid-item">
                 <div class="item-label">{{ data.label }}</div>
@@ -113,6 +113,21 @@
         }
       }
     }
+  }
+}
+@media (max-width: 1500px) {
+  .candies {
+    .candies-header {
+      .searchBar {
+        bottom: -150px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .searchBar {
+    left:0;
   }
 }
 </style>

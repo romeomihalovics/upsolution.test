@@ -9,23 +9,23 @@
       :key="id"
       class="searchResult-item">
       <div class="row">
-        <div class="col">
-          <router-link :to="'/termek/'+data.id" class="d-flex align-items-center">
+        <div class="col-md text-center py-md-0 py-2">
+          <router-link :to="'/termek/'+data.id" class="d-md-flex align-items-center">
             <div class="item-picture" :style="{ backgroundImage: 'url('+require('@/assets/img/'+data.img)+')' }"></div>
           </router-link>
         </div>
-        <div class="col">
-          <router-link :to="'/termek/'+data.id" class="d-flex align-items-center">
+        <div class="col-md text-center py-md-0 py-2">
+          <router-link :to="'/termek/'+data.id" class="d-md-flex align-items-center">
             <div class="item-name">{{ data.name }}</div>
           </router-link>
         </div>
-        <div class="col d-flex align-items-center">
+        <div class="col-md text-center d-md-flex align-items-center py-md-0 py-2">
           <div class="item-info">
             {{ data.new_price }}
             <span>{{ data.old_price }}</span>
           </div>
         </div>
-        <div class="col d-flex align-items-center">
+        <div class="col d-md-flex align-items-center text-center">
           <button class="big-btn" @click="addCart">Kosárba rakom</button>
         </div>
       </div>
@@ -91,6 +91,21 @@
         text-decoration: line-through;
         color:$color_black;
         font-weight: 500;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .searchResults {
+    .searchResult-item {
+      .item-picture {
+        content: '';
+        width: 100%;
+        height: 100px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
       }
     }
   }

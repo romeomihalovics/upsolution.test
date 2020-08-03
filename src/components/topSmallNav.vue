@@ -1,50 +1,52 @@
 <template>
   <div>
     <b-navbar type="dark" class="topSmallNav">
-      <b-navbar-nav class="ml-auto">
-        <b-nav-item
-          href="#"
-          class="smallNav-link"
-          @click="showLogin"
-          v-if="!loggedin"
-        >
-          Bejelentkezés
-        </b-nav-item>
-        <b-nav-item-dropdown
-          class="smallNav-link text-center"
-          v-if="loggedin"
-          right
-        >
-          <template slot="button-content">
-            JOHN DOE
-            <span class="icon-angle-down"></span>
-          </template>
-          <b-dropdown-item href="#">Profilom</b-dropdown-item>
-          <b-dropdown-item href="#" class="active">Rendeléseim</b-dropdown-item>
-          <b-dropdown-item href="#" @click="fakeLogout">Kijelentkezés</b-dropdown-item>
-        </b-nav-item-dropdown>
-        <b-nav-item href="#" class="smallNav-link">Kosár ({{ cart }})</b-nav-item>
-        <b-nav-item-dropdown class="smallNav-link text-center" right>
-          <template slot="button-content">
-            HU
-            <span class="icon-angle-down"></span>
-          </template>
-          <b-dropdown-item href="#">HU</b-dropdown-item>
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">CH</b-dropdown-item>
-          <b-dropdown-item href="#">JA</b-dropdown-item>
-        </b-nav-item-dropdown>
-        <b-nav-item-dropdown class="smallNav-link text-center" right>
-          <template slot="button-content">
-            HUF
-            <span class="icon-angle-down"></span>
-          </template>
-          <b-dropdown-item href="#">HUF</b-dropdown-item>
-          <b-dropdown-item href="#">USD</b-dropdown-item>
-          <b-dropdown-item href="#">CNY</b-dropdown-item>
-          <b-dropdown-item href="#">JPY</b-dropdown-item>
-        </b-nav-item-dropdown>
-      </b-navbar-nav>
+      <div class="container">
+        <b-navbar-nav class="ml-md-right mr-md-0 mr-auto ml-auto">
+          <b-nav-item
+            href="#"
+            class="smallNav-link"
+            @click="showLogin"
+            v-if="!loggedin"
+          >
+            Bejelentkezés
+          </b-nav-item>
+          <b-nav-item-dropdown
+            class="smallNav-link text-center"
+            v-if="loggedin"
+            right
+          >
+            <template slot="button-content">
+              JOHN DOE
+              <span class="icon-angle-down"></span>
+            </template>
+            <b-dropdown-item href="#">Profilom</b-dropdown-item>
+            <b-dropdown-item href="#" class="active">Rendeléseim</b-dropdown-item>
+            <b-dropdown-item href="#" @click="fakeLogout">Kijelentkezés</b-dropdown-item>
+          </b-nav-item-dropdown>
+          <b-nav-item href="#" class="smallNav-link">Kosár ({{ cart }})</b-nav-item>
+          <b-nav-item-dropdown class="smallNav-link text-center" right>
+            <template slot="button-content">
+              HU
+              <span class="icon-angle-down"></span>
+            </template>
+            <b-dropdown-item href="#">HU</b-dropdown-item>
+            <b-dropdown-item href="#">EN</b-dropdown-item>
+            <b-dropdown-item href="#">CH</b-dropdown-item>
+            <b-dropdown-item href="#">JA</b-dropdown-item>
+          </b-nav-item-dropdown>
+          <b-nav-item-dropdown class="smallNav-link text-center" right>
+            <template slot="button-content">
+              HUF
+              <span class="icon-angle-down"></span>
+            </template>
+            <b-dropdown-item href="#">HUF</b-dropdown-item>
+            <b-dropdown-item href="#">USD</b-dropdown-item>
+            <b-dropdown-item href="#">CNY</b-dropdown-item>
+            <b-dropdown-item href="#">JPY</b-dropdown-item>
+          </b-nav-item-dropdown>
+        </b-navbar-nav>
+      </div>
     </b-navbar>
   </div>
 </template>
@@ -56,7 +58,6 @@
   background-color: $color_purple;
   color: $color_white;
   height: 50px;
-  padding: 0 120px !important;
   text-transform: uppercase;
   .smallNav-link {
     &.text-center {

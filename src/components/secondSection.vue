@@ -8,7 +8,7 @@
           <div
             v-for="(data, id) in jsondata.recommended"
             :key="id"
-            class="col-md-4"
+            class="col-lg-4 col-md-6"
           >
             <div class="grid-item">
               <div class="item-label">{{ data.label }}</div>

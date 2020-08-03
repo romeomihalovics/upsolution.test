@@ -143,7 +143,7 @@
         background: $color_black;
         position: absolute;
         right: 45px;
-        top: 35px;
+        top: 39px;
         z-index: 1;
         display: block;
         transition: .2s ease-out;
@@ -155,11 +155,41 @@
         background: $color_black;
         position: absolute;
         right: 52px;
-        top: 28px;
+        top: 32px;
         z-index: 1;
         display: block;
         transition: .2s ease-out;
         transform-origin: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .faq {
+    .faq-tabs {
+      .faq-accordion {
+        &:checked {
+          + .faq-tab {
+            div {
+              padding: 30px 15px 60px 15px;
+            }
+          }
+        }
+      }
+      .faq-tab {
+        label {
+          padding: 25px 40px 25px 15px;
+        }
+        div {
+          padding: 0 15px;
+        }
+        &:after {
+          right: 15px;
+        }
+        &:before {
+          right: 22px;
+        }
       }
     }
   }

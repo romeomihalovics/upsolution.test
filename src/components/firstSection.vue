@@ -88,6 +88,60 @@
   background-repeat: no-repeat;
   background-position: 50% 40%;
 }
+
+@media (max-width: 1500px) {
+  .carousel-text {
+    margin-left: 120px;
+    margin-top: 30px;
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 35px;
+    }
+    .VueCarousel-navigation {
+      position: absolute;
+      bottom:0;
+      left:50px;
+      .VueCarousel-navigation-button {
+        color: $color_white !important;
+        border: 2px solid $color_white;
+        border-radius: 5px;
+        width: 50px;
+        height: 50px;
+        margin-right: -20px;
+        opacity: 1;
+        .carousel-btn-label {
+          font-size: 20px;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-bg-slide {
+    height: calc(100vh - 120px);
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-text {
+    width: 50%;
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-text {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 80%;
+  }
+}
 </style>
 
 <script>

@@ -7,7 +7,7 @@
         <router-link to="/edessegek" class="backhome dark">Termékek</router-link>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col-md">
           <carousel
             :per-page="1"
             :navigationEnabled="false"
@@ -22,18 +22,20 @@
             ></slide>
           </carousel>
         </div>
-        <div class="col text-left pl-5">
+        <div class="col-md text-left pl-md-5 pr-md-0 pt-md-0 pt-5 pl-4 pr-4">
           <div class="single-label">{{ jsondata.all.items[id].label }}</div>
           <div class="single-title">{{ jsondata.all.items[id].name }}</div>
-          <div class="single-desc">{{ jsondata.all.items[id].single.small_desc }}</div>
-          <div class="single-info">
+          <div class="single-desc ">{{ jsondata.all.items[id].single.small_desc }}</div>
+          <div class="single-info text-md-left text-center">
             {{ jsondata.all.items[id].new_price }} <span>{{ jsondata.all.items[id].old_price }}</span>
           </div>
-          <div class="single-quantity my-5">
+          <div class="single-quantity my-md-5 my-4 text-md-left text-center">
             <input type="number" id="quantity" min="1" value="1">
             <label for="quantity">db</label>
           </div>
-          <button class="big-btn">Kosárba Rakom</button>
+          <div class="text-md-left text-center">
+            <button class="big-btn">Kosárba Rakom</button>
+          </div>
         </div>
       </div>
       <div class="single-tabs text-left">

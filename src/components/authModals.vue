@@ -2,7 +2,8 @@
   <div id="authModals">
     <modal
       name="login"
-      width="510px"
+      :adaptive="true"
+      :max-width="510"
       height="auto"
       class="authModal"
     >
@@ -28,7 +29,8 @@
     </modal>
     <modal
       name="register"
-      width="510px"
+      :adaptive="true"
+      :max-width="510"
       height="auto"
       class="authModal"
     >

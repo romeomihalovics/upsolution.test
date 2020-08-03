@@ -75,6 +75,42 @@
     }
   }
 }
+
+@media (max-width: 1500px) {
+  .searchBar {
+    bottom: 50px;
+    .searchBar-container {
+      .searchBar-input {
+        margin: 20px 30px;
+        padding: 13px 10px;
+      }
+      .searchBar-btn {
+        width: 50px;
+        height: 50px;
+        padding:13px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .searchBar {
+    bottom: 50px;
+    .searchBar-container {
+      .searchBar-input {
+        margin: 20px 0px;
+        padding: 13px 10px;
+        width: 100%;
+      }
+      .searchBar-btn {
+        width: 50px;
+        height: 50px;
+        padding:13px;
+        right: 0px;
+      }
+    }
+  }
+}
 </style>
 
 <script>

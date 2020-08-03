@@ -6,7 +6,7 @@
       <p>További kérdése van, részleges tájékoztatásra van szüksége? Írjon nekünk, keresse munkatársainkat!</p>
       <form>
         <div class="row">
-          <div class="col-6">
+          <div class="col-sm-6">
             <label class="contact-input">
               <input type="text" name="surname" placeholder=" ">
               <span class="label-wrapper">
@@ -14,7 +14,7 @@
               </span>
             </label>
           </div>
-          <div class="col-6">
+          <div class="col-sm-6">
             <label class="contact-input">
               <input type="text" name="lastname" placeholder=" ">
               <span class="label-wrapper">
@@ -22,7 +22,7 @@
               </span>
             </label>
           </div>
-          <div class="col-6">
+          <div class="col-sm-6">
             <label class="contact-input">
               <input type="text" name="email" placeholder=" ">
               <span class="label-wrapper">
@@ -30,7 +30,7 @@
               </span>
             </label>
           </div>
-          <div class="col-6">
+          <div class="col-sm-6">
             <label class="contact-input">
               <input type="text" name="orderid" placeholder=" ">
               <span class="label-wrapper">
@@ -47,11 +47,11 @@
             </label>
           </div>
           <div class="w-100"></div>
-          <div class="col-6 py-5 agreed-check">
+          <div class="col-sm-6 py-sm-5 py-2 agreed-check">
             <input type="checkbox" id="agreed" name="agreed">
             <label for="agreed">Elfogadom az <a href="#" class="dark">Adatvédelmi Nyilatkozat</a>-ot.</label>
           </div>
-          <div class="col-6 py-5 mb-2">
+          <div class="col-sm-6 py-sm-5 py-2 mb-sm-2 mb-4">
             <button class="big-btn contact-btn">Küldés</button>
           </div>
         </div>

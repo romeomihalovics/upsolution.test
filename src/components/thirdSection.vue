@@ -1,20 +1,20 @@
 <template>
-  <section class="thirdSection-wrapper">
+  <section class="thirdSection-wrapper container">
     <h3>Partnerek</h3>
-    <div class="row partnerLogos">
-      <div class="col">
+    <div class="row partnerLogos text-center">
+      <div class="col-lg col-md-6 py-4">
         <img src="../assets/img/cocacola.svg">
       </div>
-      <div class="col">
+      <div class="col-lg col-md-6 py-4">
         <img src="../assets/img/hell.svg">
       </div>
-      <div class="col">
+      <div class="col-lg col-md-6 py-4">
         <img src="../assets/img/balaton.svg">
       </div>
-      <div class="col">
+      <div class="col-lg col-md-6 py-4">
         <img src="../assets/img/snickers.svg">
       </div>
-      <div class="col">
+      <div class="col-lg col-md-6 py-4 m-auto">
         <img src="../assets/img/twix.svg">
       </div>
     </div>
@@ -23,7 +23,7 @@
 
 <style lang="scss">
 .thirdSection-wrapper {
-  padding: 90px 185px;
+  padding: 60px 0px;
   h3 {
     margin-bottom: 90px;
     font-size: 28px;
